@@ -1,9 +1,5 @@
-
 # YouTube Research LangGraph
-
 This project is a **multi-agent YouTube research workflow** using LangGraph and LangChain. It searches YouTube videos, extracts transcripts, summarizes content, stores results, and generates a final report.
-
----
 
 ## **Features**
 
@@ -14,8 +10,6 @@ This project is a **multi-agent YouTube research workflow** using LangGraph and 
 - Generate a final report
 - Fully compatible with **LangChain agents**
 - Async & sync YouTube search support
-
----
 
 ## **Workflow**
 
@@ -31,7 +25,6 @@ This project is a **multi-agent YouTube research workflow** using LangGraph and 
 - **store** → store results in structured format  
 - **final_report** → generate final report  
 
----
 
 ## **State Structure**
 
@@ -41,7 +34,6 @@ This project is a **multi-agent YouTube research workflow** using LangGraph and 
 - **Data:** `video_urls`, `video_metadata`, `transcripts`, `summaries`, `storage_results`, `final_report`  
 - **Status:** `current_step`, `errors`
 
----
 
 ## **Setup**
 
@@ -59,7 +51,6 @@ YOUTUBE_API_KEY=your_youtube_api_key_here
 
 > **Important:** Never commit real API keys to GitHub.
 
----
 
 ## **Usage**
 
@@ -73,7 +64,6 @@ python main.py
 * Executes all agents in order
 * Prints `video_urls` found and workflow status
 
----
 
 ## **YouTube Search Tool**
 
@@ -95,8 +85,6 @@ from tools.youtube_search_tool import youtube_search_function_sync
 from tools.youtube_search_tool import create_youtube_tool_async, create_youtube_tool_sync
 ```
 
----
-
 ## **Notes**
 
 * Async calls use `aiohttp` and `asyncio`
@@ -109,6 +97,3 @@ from tools.youtube_search_tool import create_youtube_tool_async, create_youtube_
 
 MIT License
 
-
-Do you want me to do that?
-```
